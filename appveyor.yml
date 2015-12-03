@@ -2,6 +2,10 @@
 version: "#{build}"
 environment:
   MRUBY_CONFIG: "C:/projects/mruby-dir/run_test.rb"
+  matrix:
+  - Compiler: msvc
+    Config: Debug
+  - Compiler: mingw
 
 install:
   - SET PATH=C:\Ruby%ruby_version%\bin;%PATH%
